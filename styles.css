@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 19%, 92%);
+}
+
+/* TYPO ===============================================================================*/
+
+/* notifCount-markRead-container */
+
+.notifCount-markRead-container h3 {
+    font-weight: 800;
+}
+
+#counter-notif {
+    color: white;
+}
+
+.notifCount-markRead-container p {
+    color: hsl(219, 14%, 63%);
+}
+
+/* content-holder */
+
+.message-holder strong {
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.message-holder strong:hover {
+    color: hsl(226, 98%, 50%);
+}
+
+.message-holder p {
+    color: hsl(219, 12%, 42%);
+}
+
+.your-post {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.your-post:hover {
+    color: hsl(226, 98%, 50%);
+}
+
+.group {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.group:hover {
+    color: hsl(226, 98%, 50%);
+}
+/* TYPO ===============================================================================*/
+
+/* LAYOUT =================================================================================*/
+
+
+.container {
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    max-width: 800px;
+    box-shadow: 0px 0px 27px -13px rgba(0,0,0,1);
+}
+
+/* notif-container */
+
+.notifCount-markRead-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+#counter-notif {
+    background-color: hsl(219, 85%, 26%);
+    padding: 0.1em 0.6em;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+#mark-all {
+    margin-left: 1em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* notif-content-container */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.content-holder {
+    display: flex;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.message-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+/* while active */
+
+.content-holder.active {
+    background-color: hsl(210, 60%, 98%);
+}
+
+
+.content-holder.active .red-ball::after {
+    content: '';
+    display: inline-block;
+    color: red;
+    width: 10px;
+    height: 10px;
+    margin-left: 0.5em;
+    background-color: red;
+    border-radius: 50%;
+}
+
+/* while active */
+/* profile img and name */
+
+.profile-pic {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.profile-pic img {
+    width: 50px;
+}
+
+.message-holder strong {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+/* your post span */
+
+.your-post {
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+/* group span */
+
+.group {
+    margin-left: 0.5em;
+    cursor: pointer;
+}
+
+/* message-layout */
+
+.message {
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 1em;
+    cursor: pointer;
+}
+
+.message:hover {
+    background-color: hsl(205, 62%, 90%);
+}
+
+/* your-picture Layout */
+
+.your-picture {
+    margin-left: auto;
+    cursor: pointer;
+        padding: 0.1em;
+    border-radius: 10px;
+}
+
+.your-picture:hover {
+    border: 1px solid hsl(205, 62%, 90%);
+}
+
+.your-picture img {
+    width: 50px;
+}
+
+
+/* LAYOUT =================================================================================*/
